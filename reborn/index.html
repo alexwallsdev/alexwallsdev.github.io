@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Support for REBORN, a life points tracker for Yu-Gi-Oh! duels.">
+<title>REBORN - Life Points Tracker</title>
+<style>
+  :root {
+    --bg: #000000;
+    --text: #F2F2F2;
+    --muted: #8C8C8C;
+    --line: #262626;
+    --high: #86DF8F;
+    --mid: #F5C07A;
+    --low: #F29B94;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 38rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
+  .wordmark {
+    margin: 0;
+    font-size: clamp(3.5rem, 16vw, 6rem);
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .tones { display: flex; gap: 6px; margin: 1.25rem 0 1.75rem; }
+  .tones span { height: 4px; border-radius: 2px; }
+  .tones span:nth-child(1) { width: 5rem; background: var(--high); }
+  .tones span:nth-child(2) { width: 2.5rem; background: var(--mid); }
+  .tones span:nth-child(3) { width: 1.25rem; background: var(--low); }
+  .lead { font-size: 1.2rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.25rem; font-weight: 650; margin: 2.75rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.25rem; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  a { color: var(--high); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--high); outline-offset: 3px; border-radius: 2px; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="wordmark">REBORN</h1>
+  <div class="tones" aria-hidden="true"><span></span><span></span><span></span></div>
+  <p class="lead">A life points tracker for Yu-Gi-Oh! duels, quick at the table and light on the battery.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Changes life points with one tap, with an add mode for gains.</li>
+    <li>Keeps a history for each player, where any earlier value can be restored.</li>
+    <li>Gives each player a calculator, a coin and a die.</li>
+    <li>Supports 1v1 duels and Tag Duels, with TCG and OCG starting values.</li>
+    <li>Offers four display modes for the different ways of placing the phone.</li>
+    <li>Lets each player choose a name, a color and a background pattern.</li>
+    <li>Works fully offline.</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <h3>Does REBORN need an internet connection?</h3>
+  <p>No. The app works entirely on your device.</p>
+  <h3>Where is my data stored?</h3>
+  <p>Only on your device. The details are in the <a href="privacy.html">privacy policy</a>.</p>
+  <h3>How do I start a new duel?</h3>
+  <p>Tap Reset in the middle of the screen and confirm.</p>
+  <h3>I entered a wrong value. How do I fix it?</h3>
+  <p>Tap the player's life points to open the history, then tap Apply on the entry you want to go back to.</p>
+
+  <h2>Contact</h2>
+  <p>For questions or bug reports, write to <a href="mailto:alex.walls.dev@gmail.com">alex.walls.dev@gmail.com</a>. For a bug, include your phone model and what you were doing when it happened.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a></p>
+    <p>REBORN is an unofficial app made by a player. It is not affiliated with, endorsed or sponsored by Konami. Yu-Gi-Oh! is a trademark of its respective owners.</p>
+  </footer>
+</main>
+</body>
+</html>
